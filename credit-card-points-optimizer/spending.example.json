@@ -1,0 +1,45 @@
+{
+  "month": "2026-09",
+  "categories": [
+    {
+      "name": "Rent / Maintenance",
+      "amount_inr": 40000,
+      "channel_by_card": {}
+    },
+    {
+      "name": "Grocery & Food Delivery (Swiggy/Zomato)",
+      "amount_inr": 15000,
+      "channel_by_card": {
+        "hdfc_infinia": "smartbuy_vouchers",
+        "amex_platinum_travel": "gyftr_vouchers"
+      }
+    },
+    {
+      "name": "Amazon/Flipkart Shopping",
+      "amount_inr": 10000,
+      "channel_by_card": {
+        "hdfc_infinia": "smartbuy_vouchers",
+        "amex_platinum_travel": "gyftr_vouchers"
+      }
+    },
+    {
+      "name": "Fuel",
+      "amount_inr": 5000,
+      "channel_by_card": {}
+    },
+    {
+      "name": "Flights/Hotels",
+      "amount_inr": 15000,
+      "channel_by_card": {
+        "hdfc_infinia": "smartbuy_travel"
+      }
+    },
+    {
+      "name": "Other Online Spends",
+      "amount_inr": 8000,
+      "channel_by_card": {
+        "sbi_cashback": "online_spends"
+      }
+    }
+  ]
+}

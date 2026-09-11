@@ -1,0 +1,63 @@
+{
+  "cards": [
+    {
+      "id": "hdfc_infinia",
+      "name": "HDFC Infinia",
+      "base_reward_rate_percent": 3.3,
+      "channels": {
+        "smartbuy_travel": {
+          "rate_percent": 16.5,
+          "monthly_bonus_spend_cap_inr": 60000,
+          "notes": "Flights/hotels booked via HDFC SmartBuy"
+        },
+        "smartbuy_vouchers": {
+          "rate_percent": 33.0,
+          "monthly_bonus_spend_cap_inr": 30000,
+          "notes": "Amazon/Flipkart/Swiggy/Zomato brand vouchers via SmartBuy"
+        }
+      },
+      "milestones": []
+    },
+    {
+      "id": "amex_platinum_travel",
+      "name": "Amex Platinum Travel",
+      "base_reward_rate_percent": 1.25,
+      "channels": {
+        "gyftr_vouchers": {
+          "rate_percent": 3.75,
+          "monthly_bonus_spend_cap_inr": null,
+          "notes": "Amazon/Flipkart/Swiggy/Zomato brand vouchers via Amex Gyftr (3x base)"
+        }
+      },
+      "milestones": [
+        {
+          "name": "First milestone",
+          "period": "annual",
+          "threshold_spend_inr": 190000,
+          "current_spend_inr": 150000,
+          "reward": "10,000 bonus Membership Rewards points"
+        },
+        {
+          "name": "Second milestone",
+          "period": "annual",
+          "threshold_spend_inr": 400000,
+          "current_spend_inr": 150000,
+          "reward": "24,000 bonus points + ₹10,000 Taj voucher"
+        }
+      ]
+    },
+    {
+      "id": "sbi_cashback",
+      "name": "SBI Cashback",
+      "base_reward_rate_percent": 1.0,
+      "channels": {
+        "online_spends": {
+          "rate_percent": 5.0,
+          "monthly_bonus_spend_cap_inr": 100000,
+          "notes": "5% cashback on online spends, capped at ₹5,000 cashback per billing cycle"
+        }
+      },
+      "milestones": []
+    }
+  ]
+}
