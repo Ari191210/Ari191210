@@ -7,19 +7,17 @@
       "channel_by_card": {}
     },
     {
-      "name": "Grocery & Food Delivery (Swiggy/Zomato)",
+      "name": "Grocery & Food Delivery Vouchers (Swiggy/Zomato via SmartBuy)",
       "amount_inr": 15000,
       "channel_by_card": {
-        "hdfc_infinia": "smartbuy_vouchers",
-        "amex_platinum_travel": "gyftr_vouchers"
+        "hdfc_infinia": "smartbuy_vouchers"
       }
     },
     {
-      "name": "Amazon/Flipkart Shopping",
+      "name": "Amazon/Flipkart Vouchers (via SmartBuy)",
       "amount_inr": 10000,
       "channel_by_card": {
-        "hdfc_infinia": "smartbuy_vouchers",
-        "amex_platinum_travel": "gyftr_vouchers"
+        "hdfc_infinia": "smartbuy_vouchers"
       }
     },
     {
@@ -28,17 +26,49 @@
       "channel_by_card": {}
     },
     {
-      "name": "Flights/Hotels",
-      "amount_inr": 15000,
+      "name": "Hotel Booking (via SmartBuy)",
+      "amount_inr": 25000,
       "channel_by_card": {
-        "hdfc_infinia": "smartbuy_travel"
+        "hdfc_infinia": "smartbuy_hotels"
       }
     },
     {
-      "name": "Other Online Spends",
+      "name": "Flight Booking (via Travel EDGE portal)",
+      "amount_inr": 30000,
+      "channel_by_card": {
+        "hdfc_infinia": "smartbuy_flights",
+        "axis_magnus_burgundy": "travel_edge_portal"
+      }
+    },
+    {
+      "name": "International Spend",
+      "amount_inr": 20000,
+      "channel_by_card": {
+        "hdfc_infinia": "international_spend",
+        "hsbc_premier": "international_spend",
+        "axis_magnus_burgundy": "international_spend",
+        "axis_olympus": "international_spend"
+      }
+    },
+    {
+      "name": "Weekend Dining / Retail",
       "amount_inr": 8000,
       "channel_by_card": {
-        "sbi_cashback": "online_spends"
+        "indusind_legend": "weekend_spend"
+      }
+    },
+    {
+      "name": "Apple Purchase (via HSBC Unicorn)",
+      "amount_inr": 12000,
+      "channel_by_card": {
+        "hsbc_premier": "apple_unicorn"
+      }
+    },
+    {
+      "name": "Utilities / Insurance",
+      "amount_inr": 6000,
+      "channel_by_card": {
+        "indusind_legend": "low_yield_categories"
       }
     }
   ]

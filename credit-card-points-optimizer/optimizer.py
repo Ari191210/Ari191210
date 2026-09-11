@@ -45,6 +45,7 @@ class Card:
     base_reward_rate_percent: float
     channels: dict[str, Channel] = field(default_factory=dict)
     milestones: list[Milestone] = field(default_factory=list)
+    notes: str = ""
 
 
 @dataclass
@@ -79,6 +80,7 @@ def load_cards(path: Path) -> list[Card]:
                 base_reward_rate_percent=raw["base_reward_rate_percent"],
                 channels=channels,
                 milestones=milestones,
+                notes=raw.get("notes", ""),
             )
         )
     if not cards:
@@ -251,6 +253,12 @@ def render_text(
     milestone_lines = milestone_report(cards, card_totals)
     out.extend(milestone_lines if milestone_lines else ["  (no milestones configured)"])
 
+    notes_lines = [f"  [{c.name}] {c.notes}" for c in cards if c.notes]
+    if notes_lines:
+        out.append("")
+        out.append("Card notes / caveats:")
+        out.extend(notes_lines)
+
     return "\n".join(out)
 
 
@@ -265,6 +273,7 @@ def render_json(
         "allocations": [a.__dict__ for a in allocations],
         "card_totals_inr": card_totals,
         "milestones": milestone_report(cards, card_totals),
+        "card_notes": {c.name: c.notes for c in cards if c.notes},
     }
     return json.dumps(payload, indent=2)
 

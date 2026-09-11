@@ -3,61 +3,115 @@
     {
       "id": "hdfc_infinia",
       "name": "HDFC Infinia",
-      "base_reward_rate_percent": 3.3,
+      "base_reward_rate_percent": 3.33,
+      "notes": "Base = 5 RP/₹150, valuing 1 RP = ₹1 (best-case redemption via SmartBuy flights/hotels; cash/statement credit is worth far less, ~₹0.30/RP). SmartBuy rewards were cut in Jan 2026 and again in Jul 2026 — reconfirm all SmartBuy multipliers/caps before relying on them.",
       "channels": {
-        "smartbuy_travel": {
-          "rate_percent": 16.5,
-          "monthly_bonus_spend_cap_inr": 60000,
-          "notes": "Flights/hotels booked via HDFC SmartBuy"
-        },
         "smartbuy_vouchers": {
-          "rate_percent": 33.0,
-          "monthly_bonus_spend_cap_inr": 30000,
-          "notes": "Amazon/Flipkart/Swiggy/Zomato brand vouchers via SmartBuy"
+          "rate_percent": 16.67,
+          "monthly_bonus_spend_cap_inr": 18000,
+          "notes": "5X on GyFTR/Woohoo brand vouchers (Amazon/Flipkart/Swiggy/Zomato etc.), 25 RP/₹150. As of Jul 2026 this category is capped at 3,000 bonus points/month (~₹18,000 of voucher spend at this rate)."
+        },
+        "smartbuy_hotels": {
+          "rate_percent": 33.3,
+          "monthly_bonus_spend_cap_inr": null,
+          "notes": "10X on hotel bookings via SmartBuy, 50 RP/₹150. No dedicated sub-cap reported as of Sep 2026, but subject to any overall SmartBuy ceiling — verify current terms."
+        },
+        "smartbuy_flights": {
+          "rate_percent": 16.67,
+          "monthly_bonus_spend_cap_inr": null,
+          "notes": "5X on flight bookings via SmartBuy, 25 RP/₹150."
+        },
+        "international_spend": {
+          "rate_percent": 1.33,
+          "monthly_bonus_spend_cap_inr": null,
+          "notes": "Base 3.33% minus a 2% forex markup = 1.33% net. Enrolling in HDFC's Global Value Program adds 1% cashback on int'l spend, capped at ₹1,000/statement cycle — worth ~2.33% net if enrolled and under the cap. A separate 1.75% Dynamic Currency Conversion fee applies if you accept billing in INR abroad — always pay in local currency."
         }
       },
       "milestones": []
     },
     {
-      "id": "amex_platinum_travel",
-      "name": "Amex Platinum Travel",
-      "base_reward_rate_percent": 1.25,
+      "id": "hsbc_premier",
+      "name": "HSBC Premier Metal",
+      "base_reward_rate_percent": 3.0,
+      "notes": "Base = 3 RP/₹100, valuing 1 RP ≈ ₹1 (transfer to airline/hotel partners at ~1:1). No rewards on fuel; utility + insurance spend earns rewards only up to ₹1L/month combined — don't route fuel to this card.",
       "channels": {
-        "gyftr_vouchers": {
-          "rate_percent": 3.75,
+        "marketplace_travel": {
+          "rate_percent": 36.0,
           "monthly_bonus_spend_cap_inr": null,
-          "notes": "Amazon/Flipkart/Swiggy/Zomato brand vouchers via Amex Gyftr (3x base)"
+          "notes": "Up to 12X reported on HSBC Marketplace flight/hotel/car-rental bookings — this is rich enough that it may be tiered or promotional. Confirm the current live multiplier before counting on it."
+        },
+        "apple_unicorn": {
+          "rate_percent": 18.0,
+          "monthly_bonus_spend_cap_inr": null,
+          "notes": "6X on Apple purchases via the HSBC Unicorn portal."
+        },
+        "international_spend": {
+          "rate_percent": 2.01,
+          "monthly_bonus_spend_cap_inr": null,
+          "notes": "Base 3% minus a 0.99% standard forex markup = 2.01% net (HSBC's forex markup is among the lowest in the market — industry norm is ~3.5%). HSBC is running a 0% forex markup promo from 15 Aug-15 Sep 2026; during a 0% window this channel is really worth the full 3% base — check if the promo is still live before relying on 2.01%."
+        }
+      },
+      "milestones": []
+    },
+    {
+      "id": "axis_magnus_burgundy",
+      "name": "Axis Magnus for Burgundy",
+      "base_reward_rate_percent": 6.0,
+      "notes": "Base = 12 EDGE pts/₹200 up to ₹1.5L/month, valuing 1 EDGE point ≈ ₹1 (best-case airline/hotel transfer at 5:4 for legacy partners, 5:2 for newer ones like BA/Finnair — so real value is often lower). Incremental spend beyond ₹1.5L/month in a calendar month jumps to 35 pts/₹200 (17.5%) — not modeled as a separate channel here since it only applies once you clear that threshold. Annual fee ₹30,000+GST, relationship-invite only.",
+      "channels": {
+        "travel_edge_portal": {
+          "rate_percent": 30.0,
+          "monthly_bonus_spend_cap_inr": 200000,
+          "notes": "60 EDGE pts/₹200 via the Travel EDGE portal, capped at ₹2L of monthly spend at this rate."
+        },
+        "international_spend": {
+          "rate_percent": 3.64,
+          "monthly_bonus_spend_cap_inr": null,
+          "notes": "Base 6% minus a 2%+GST (~2.36%) forex markup = 3.64% net. Lower than Axis Olympus's international_spend channel (5.8% net) — route foreign spend to Olympus instead unless you need Magnus for a specific reason."
+        }
+      },
+      "milestones": []
+    },
+    {
+      "id": "axis_olympus",
+      "name": "Axis Olympus",
+      "base_reward_rate_percent": 4.0,
+      "notes": "1 EDGE Mile/₹100 domestic, each mile transfers at 1:4 to airline/hotel partners (Air India, KrisFlyer, Aeroplan, Flying Blue, IHG, etc.), up to 7.5L EDGE Miles/year. Annual fee ₹20,000; welcome benefit ₹10,000 Taj/ITC voucher + 2,500 EDGE Miles.",
+      "channels": {
+        "international_spend": {
+          "rate_percent": 5.8,
+          "monthly_bonus_spend_cap_inr": null,
+          "notes": "2 EDGE Miles/₹100 (8% gross via 1:4 transfer) on international spend, net ~5.8% after the 1.8%+GST forex markup."
+        }
+      },
+      "milestones": []
+    },
+    {
+      "id": "indusind_legend",
+      "name": "IndusInd Legend",
+      "base_reward_rate_percent": 0.75,
+      "notes": "Weekday rate = 1 RP/₹100, valuing 1 RP = ₹0.75 cash redemption. This optimizer has no day-of-week logic — route weekend-heavy categories to the weekend_spend channel below manually. No rewards multiplier on medical/auto/telecom (flat 1 RP/₹100 both weekday and weekend, same as base). Charges a 1.8% forex markup on international spend, which exceeds this card's own reward rate — never route international spend here. Card name assumed from 'mental heritage' — confirm this is the IndusInd Legend metal card and correct if not.",
+      "channels": {
+        "weekend_spend": {
+          "rate_percent": 1.5,
+          "monthly_bonus_spend_cap_inr": null,
+          "notes": "2 RP/₹100 on Saturday-Sunday spend vs. 1 RP/₹100 on weekdays. Only route spend here that you know will actually happen on a weekend."
+        },
+        "low_yield_categories": {
+          "rate_percent": 0.525,
+          "monthly_bonus_spend_cap_inr": null,
+          "notes": "0.70 RP/₹100 on utilities, insurance, government services, education fees, and rent — worse than base; only relevant if this is your only card in that category."
         }
       },
       "milestones": [
         {
-          "name": "First milestone",
-          "period": "annual",
-          "threshold_spend_inr": 190000,
-          "current_spend_inr": 150000,
-          "reward": "10,000 bonus Membership Rewards points"
-        },
-        {
-          "name": "Second milestone",
-          "period": "annual",
-          "threshold_spend_inr": 400000,
-          "current_spend_inr": 150000,
-          "reward": "24,000 bonus points + ₹10,000 Taj voucher"
+          "name": "Year-1 spend bonus",
+          "period": "one-time, within 1 year of card issuance",
+          "threshold_spend_inr": 500000,
+          "current_spend_inr": 0,
+          "reward": "3,000 bonus reward points (~₹2,250 at ₹0.75/point)"
         }
       ]
-    },
-    {
-      "id": "sbi_cashback",
-      "name": "SBI Cashback",
-      "base_reward_rate_percent": 1.0,
-      "channels": {
-        "online_spends": {
-          "rate_percent": 5.0,
-          "monthly_bonus_spend_cap_inr": 100000,
-          "notes": "5% cashback on online spends, capped at ₹5,000 cashback per billing cycle"
-        }
-      },
-      "milestones": []
     }
   ]
 }
