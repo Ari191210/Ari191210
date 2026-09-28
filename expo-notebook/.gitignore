@@ -1,0 +1,9 @@
+node_modules
+dist
+dev-dist
+*.local
+.DS_Store
+coverage
+# Copied from node_modules by scripts/copy-ocr-assets.mjs on install
+public/ocr
+test-results
