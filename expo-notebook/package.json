@@ -11,7 +11,9 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "copy-ocr": "node scripts/copy-ocr-assets.mjs",
-    "postinstall": "node scripts/copy-ocr-assets.mjs"
+    "postinstall": "node scripts/copy-ocr-assets.mjs",
+    "test:e2e": "npm run build && node scripts/e2e-offline.mjs",
+    "icons": "node scripts/gen-icons.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.128.0",
