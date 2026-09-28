@@ -15,7 +15,8 @@
     "moduleDetection": "force",
     "allowImportingTsExtensions": true,
     "noEmit": true,
-    "types": ["vite/client", "vite-plugin-pwa/react", "vite-plugin-pwa/info"]
+    "types": ["vite/client", "vite-plugin-pwa/react", "node"],
+    "resolveJsonModule": true
   },
   "include": ["src", "tests", "vite.config.ts"]
 }
