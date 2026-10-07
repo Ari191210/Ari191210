@@ -1,0 +1,6 @@
+<svg width="1200" height="260" viewBox="0 0 1200 260" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="260" fill="#0d1117"/>
+  <text x="60" y="130" font-family="Helvetica, Arial, sans-serif" font-size="56" font-weight="700" fill="#f0f6fc">Aryamman Ojha</text>
+  <text x="60" y="175" font-family="Helvetica, Arial, sans-serif" font-size="24" font-weight="400" fill="#8b949e">Robotics &#183; Computer Vision &#183; Builder</text>
+  <line x1="60" y1="195" x2="300" y2="195" stroke="#30363d" stroke-width="2"/>
+</svg>
