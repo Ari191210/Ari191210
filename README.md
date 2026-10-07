@@ -1,13 +1,18 @@
-Hi there, I'm Aryamman Ojha 👋
-I’m Aryamman Ojha, a student at Delhi Public School, R.K. Puram, with a big passion for robotics 🤖 and a knack for building things from the ground up. My GitHub is a growing collection of my projects and experiments—a place where ideas meet code and circuits to create something unique.
+# Aryamman Ojha
 
-💡 About Me
-Ever since I discovered that I could make things move with code and hardware, I’ve been captivated by robotics. For me, it's the perfect combination of creativity and problem-solving, blending art and science to bring ideas to life. I love exploring everything from microcontrollers to advanced sensors, building my knowledge one project at a time.
+Grade 11 · DPS R.K. Puram, Delhi · I build robots and the software that runs them.
 
-🛠️ Skills & Areas of Interest
-Programming: Python, C/C++, Arduino
-Robotics & Electronics: Raspberry Pi, motor drivers, sensors, and making solid connections 🔌
-Project Focus: Robotics, IoT, Artificial Intelligence, Embedded Systems
+## Projects
 
-🤝 Let’s Connect!
-I’m always interested in collaborating with fellow tech enthusiasts. If you share a passion for robotics or have a project idea, feel free to reach out! Together, let’s bring some exciting concepts to life.
+- [studyledger.in](https://studyledger.in) — exam-prep SaaS for Indian students; 22 tools across plan/learn/write/practise/track, built on Next.js, Supabase, and Claude. [Case study](https://github.com/Ari191210/studyledger-case-study) (source is closed, this repo covers architecture and screenshots).
+- [hydrotwin](https://github.com/Ari191210/hydrotwin) — physics-informed flood digital twin: live terrain, rainfall, and river-discharge data driving a 2D shallow-water simulation (Landlab), rendered in an interactive 3D viewer for any location on Earth.
+- [rescue-maze-robot](https://github.com/Ari191210/rescue-maze-robot) — Arduino Nano rescue-maze robot, dual RMCS-2303 Modbus drives, encoder-based dead reckoning.
+- [axon-deepfake-detector](https://github.com/Ari191210/axon-deepfake-detector) — Team AXON: multi-backbone (EVA-02/EfficientNetV2/CLIP/DINOv2) and PHANTOM (DINOv2 + FFT frequency branch) deepfake detection pipelines. I'm one of the leads.
+
+## Stack
+
+Python, C/C++, Arduino, PyTorch — Next.js, TypeScript, and Supabase on studyledger.in.
+
+## Contact
+
+[TODO: email] · [TODO: LinkedIn URL]
