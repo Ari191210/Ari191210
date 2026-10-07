@@ -6,10 +6,10 @@ Grade 11 · DPS R.K. Puram, Delhi · I build robots and the software that runs t
 
 | Project | Description |
 |---|---|
-| [axon-deepfake-detector](https://github.com/Ari191210/axon-deepfake-detector) | Co-lead, Team AXON. Deepfake detection on EVA-02, EfficientNetV2, CLIP and DINOv2, plus PHANTOM (DINOv2 + FFT frequency branch). |
-| [hydrotwin](https://github.com/Ari191210/hydrotwin) | Team project. Physics-informed flood digital twin: live terrain, rainfall and river-discharge data, 2D shallow-water sim (Landlab), 3D viewer. |
 | [rescue-maze-robot](https://github.com/Ari191210/rescue-maze-robot) | Arduino Nano, dual RMCS-2303 Modbus drives, encoder dead reckoning. Firmware iterated through ~15 versions. |
+| [hydrotwin](https://github.com/Ari191210/hydrotwin) | Team project. Physics-informed flood digital twin: live terrain, rainfall and river-discharge data, 2D shallow-water sim (Landlab), 3D viewer. |
 | [studyledger.in](https://studyledger.in) | Exam-prep platform for Indian students, built and run solo. Next.js, Supabase, Claude. ([case study](https://github.com/Ari191210/studyledger-case-study)) |
+| [axon-deepfake-detector](https://github.com/Ari191210/axon-deepfake-detector) | Team AXON: student team project on deepfake detection. |
 
 ## Competitive robotics
 
